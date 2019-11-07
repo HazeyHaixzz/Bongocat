@@ -119,24 +119,10 @@ bot.on('message', message =>{
     }
 });
 
-bot.on('message', message =>{
-    let args = message.content.substring(PREFIX.length).split(" ");
-
-
-    switch(args[0]){
-
-
-        case "whitelistme":
-            const Embed = new RichEmbed()
-                .setColor(0xffC300)
-                .setTitle("Whitelist")
-                .setDescription("You will be whitelisted once there was an emoji 👍");
-      
-      
-                if(!args[1]){
-                    message.channel.send(Embed);
-                    break;
-                }
-      
+bot.on('message', msg =>{
+    if(msg.content === "whitelist"){
+        msg.reply('You will be whitelisted once you receive a 👍 emoji.');
+    }
+})
 
 bot.login(process.env.BOT_TOKEN);
