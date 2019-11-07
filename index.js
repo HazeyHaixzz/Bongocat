@@ -109,8 +109,8 @@ bot.on('message', message =>{
 
 
                 message.channel.send( "📋" + "**" + msgArgs + "**").then(messageReation => {
-                    messageReation.react("👎");
-                    messageReation.react("👍")
+                    messageReation.react("👍");
+                    messageReation.react("👎")
                     message.delete(1000).catch(console.error);
                 });
 
@@ -118,5 +118,18 @@ bot.on('message', message =>{
         break;
     }
 });
+
+bot.on('message', message =>{
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+
+    switch(args[0]){
+
+
+        case "whitelistme":
+            const Embed = new RichEmbed()
+                .setColor(0xffC300)
+                .setTitle("Whitelist")
+                .setDescription("You will be whitelisted once there was an emoji 👍");
 
 bot.login(process.env.BOT_TOKEN);
