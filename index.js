@@ -131,5 +131,12 @@ bot.on('message', message =>{
                 .setColor(0xffC300)
                 .setTitle("Whitelist")
                 .setDescription("You will be whitelisted once there was an emoji 👍");
+      
+      
+                if(!args[1]){
+                    message.channel.send(Embed);
+                    break;
+                }
+      
 
 bot.login(process.env.BOT_TOKEN);
