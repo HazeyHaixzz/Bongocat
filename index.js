@@ -121,6 +121,7 @@ bot.on('message', message =>{
 
 bot.on('message', msg =>{
     if(msg.content === "whitelist"){
+        msg.reply('Please enter the username that you want to be whitelisted.');
         msg.reply('You will be whitelisted once you receive a 👍 emoji.');
     }
 })
