@@ -20,13 +20,13 @@ bot.on('guildMemberAdd', member =>{
 
 bot.on('message', msg =>{
     if(msg.content === "hi"){
-        msg.reply('What support do u need?');
+        msg.reply('neko :3');
     }
 })
 
 bot.on('message', msg =>{
-    if(msg.content === "hello"){
-        msg.reply('What support do u need?');
+    if(msg.content === "no u"){
+        msg.reply('neko neko.. :(');
     }
 })
 
@@ -70,9 +70,9 @@ bot.on('message', message => {
     switch (args[0]) { 
         case 'info':
             const Embed = new RichEmbed()
-            .setTitle("Welcome to MuffinStonks")
+            .setTitle("Commands")
             .setColor(0xFF0000)
-            .setDescription("Remember to read everything in the server to fully understand whats goin on.");
+            .setDescription("Prefix e! Commands: info clear poll say");
  
             message.author.send(Embed)
         
