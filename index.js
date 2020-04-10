@@ -20,13 +20,13 @@ bot.on('guildMemberAdd', member =>{
 
 bot.on('message', msg =>{
     if(msg.content === "hi"){
-        msg.reply('neko :3');
+        msg.channel.sendMessage('neko :3');
     }
 })
 
 bot.on('message', msg =>{
     if(msg.content === "no u"){
-        msg.reply('neko neko.. :(');
+        msg.channel.sendMessage('neko neko.. :(');
     }
 })
 
@@ -120,9 +120,8 @@ bot.on('message', message =>{
 });
 
 bot.on('message', msg =>{
-    if(msg.content === "whitelist"){
-        msg.reply('Please enter the username that you want to be whitelisted.');
-        msg.channel.sendMessage('You will be whitelisted once you receive a 👍 emoji.');
+    if(msg.content === "neko"){
+        msg.channel.sendMessage('neko neko :3');
     }
 })
 
