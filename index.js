@@ -7,6 +7,8 @@ const cheerio = require('cheerio');
 
 const request = require('request');
 
+var version = '1.3';
+
 
 bot.on('ready', () =>{
 
