@@ -47,7 +47,8 @@ bot.on('message', message =>{
                     message.channel.send(Embed);
                     break;
                 }
-            
+    }
+})
             
             
 bot.on('message', message =>{
