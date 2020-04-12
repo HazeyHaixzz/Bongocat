@@ -92,7 +92,7 @@ bot.on('message', message => {
             const Embed = new RichEmbed()
             .setTitle("Commands")
             .setColor(0xFF0000)
-            .setDescription("Prefix e! Commands: info clear poll say");
+            .setDescription("Prefix e! Commands: info clear poll say invite");
  
             message.author.send(Embed)
         
