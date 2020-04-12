@@ -139,11 +139,5 @@ bot.on('message', message =>{
     }
 });
 
-bot.on('message', msg =>{
-    if(msg.content === "neko"){
-        msg.channel.sendMessage('neko neko :3');
-    }
-})
-
 
 bot.login(process.env.BOT_TOKEN);
