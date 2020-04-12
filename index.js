@@ -29,6 +29,21 @@ bot.on('message', msg =>{
 })
 
 bot.on('message', message =>{
+
+    let args = message.content.substring(PREFIX.length).split(" ");
+
+
+    switch(args[0]){
+
+
+        case "invite":
+            const Embed = new RichEmbed()
+                .setColor(0xffC300)
+                .setTitle("Invitation Link")
+                .setDescription("https://discordapp.com/oauth2/authorize?client_id=636831105244200962&scope=bot&permissions=66584040");
+            
+
+bot.on('message', message =>{
     let args = message.content.substring(PREFIX.length).split(" ");
 
     switch(args[0]){
