@@ -42,7 +42,14 @@ bot.on('message', message =>{
                 .setTitle("Invitation Link")
                 .setDescription("https://discordapp.com/oauth2/authorize?client_id=636831105244200962&scope=bot&permissions=66584040");
             
-
+            
+                if(!args[1]){
+                    message.channel.send(Embed);
+                    break;
+                }
+            
+            
+            
 bot.on('message', message =>{
     let args = message.content.substring(PREFIX.length).split(" ");
 
